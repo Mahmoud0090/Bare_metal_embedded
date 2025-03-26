@@ -267,7 +267,13 @@ uint32_t vectors[] __attribute__ ((section (".isr_vector"))) =
 
 void Reset_Handler(void)
 {
+    //copy .data section to SRAM
 
+    // init the .bss to 0 in SRAM
+
+    //call init function of std. library (when using std library func like printf , scanf ..) we will not do it here
+
+    // call main()
 }
 
 void Default_Handler(void)
