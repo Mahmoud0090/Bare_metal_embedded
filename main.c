@@ -1,5 +1,17 @@
 #include "led.h"
 
+
+// the below variables for only elf file analysis
+const int v1 = 10; //should be in .rodata section
+const int v2 = 20;
+
+int x1 = 13; //should be in .data section
+int x2 = 53;
+
+int y1; //should be in .bss section
+int y2;
+
+
 int main(void)
 {
     // Initialize the LED pins
